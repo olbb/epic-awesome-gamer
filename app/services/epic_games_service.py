@@ -30,8 +30,8 @@ URL_CART_SUCCESS = f"https://store.epicgames.com/{URL_AREA}/cart/success"
 
 
 URL_PROMOTIONS = "https://store-site-backend-static.ak.epicgames.com/freeGamesPromotions"
-URL_PRODUCT_PAGE = f"https://store.epicgames.com/{URL_AREA}/p/"
-URL_PRODUCT_BUNDLES = f"https://store.epicgames.com/{URL_AREA}/bundles/"
+URL_PRODUCT_PAGE = "https://store.epicgames.com/en-US/p/"
+URL_PRODUCT_BUNDLES= "https://store.epicgames.com/en-US/bundles/"
 
 
 def get_promotions() -> List[PromotionGame]:
