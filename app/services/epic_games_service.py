@@ -20,17 +20,18 @@ from models import OrderItem, Order
 from models import PromotionGame
 from settings import settings, RUNTIME_DIR
 
-URL_CLAIM = "https://store.epicgames.com/en-US/free-games"
+URL_AREA = "zh-CN"
+URL_CLAIM = "https://store.epicgames.com/{URL_AREA}/free-games"
 URL_LOGIN = (
-    f"https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl={URL_CLAIM}"
+    f"https://www.epicgames.com/id/login?lang={URL_AREA}&noHostRedirect=true&redirectUrl={URL_CLAIM}"
 )
-URL_CART = "https://store.epicgames.com/en-US/cart"
-URL_CART_SUCCESS = "https://store.epicgames.com/en-US/cart/success"
+URL_CART = "https://store.epicgames.com/{URL_AREA}/cart"
+URL_CART_SUCCESS = "https://store.epicgames.com/{URL_AREA}/cart/success"
 
 
 URL_PROMOTIONS = "https://store-site-backend-static.ak.epicgames.com/freeGamesPromotions"
-URL_PRODUCT_PAGE = "https://store.epicgames.com/en-US/p/"
-URL_PRODUCT_BUNDLES = "https://store.epicgames.com/en-US/bundles/"
+URL_PRODUCT_PAGE = "https://store.epicgames.com/{URL_AREA}/p/"
+URL_PRODUCT_BUNDLES = "https://store.epicgames.com/{URL_AREA}/bundles/"
 
 
 def get_promotions() -> List[PromotionGame]:
